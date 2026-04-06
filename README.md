@@ -1,8 +1,8 @@
-# Khmer Portal Code Search
+# LEAKKOD (លេខកូដ)
 
 ## 1. Overview
 
-Khmer Portal Code Search is a web-based application designed to simplify the process of retrieving official postal (portal) codes for locations across Cambodia. The system provides a fast, accurate, and user-friendly interface that allows users to search for portal codes using location names or perform reverse lookups using the code itself.
+LEAKKOD is a web-based application designed to simplify the process of retrieving official postal (portal) codes for locations across Cambodia. The system provides a fast, accurate, and user-friendly interface that allows users to search for portal codes using location names or perform reverse lookups using the code itself.
 
 The platform is built using official data published by the Ministry of Posts and Telecommunications of Cambodia (MPTC), ensuring reliability and consistency.
 
@@ -212,6 +212,6 @@ This project is intended for educational and practical use. Licensing terms can 
 
 ## 13. Conclusion
 
-Khmer Portal Code Search is designed as a foundational utility rather than a simple web application. By focusing on accuracy, performance, and usability, the system aims to streamline access to essential location data across Cambodia.
+LEAKKOD is designed as a foundational utility rather than a simple web application. By focusing on accuracy, performance, and usability, the system aims to streamline access to essential location data across Cambodia.
 
 The long-term vision is to evolve this platform into a reliable infrastructure component that can support broader digital services and integrations.
