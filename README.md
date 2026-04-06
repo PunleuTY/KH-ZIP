@@ -107,19 +107,9 @@ Data is processed, cleaned, and structured to ensure:
 
 ---
 
-## 7. API Design (Core Endpoints)
+## 7. Setup Instructions
 
-```
-GET /api/search?query={location}
-GET /api/reverse?code={portal_code}
-GET /api/location/{id}
-```
-
----
-
-## 8. Setup Instructions
-
-### 8.1 Prerequisites
+### 7.1 Prerequisites
 
 * Node.js (v18 or higher)
 * PostgreSQL
@@ -127,7 +117,7 @@ GET /api/location/{id}
 
 ---
 
-### 8.2 Backend Setup
+### 7.2 Backend Setup
 
 ```
 cd backend
@@ -152,7 +142,7 @@ npm run dev
 
 ---
 
-### 8.3 Frontend Setup
+### 7.3 Frontend Setup
 
 ```
 cd frontend
@@ -162,7 +152,7 @@ npm run dev
 
 ---
 
-### 8.4 Database Setup
+### 7.4 Database Setup
 
 1. Create database in PostgreSQL
 2. Execute schema file:
@@ -175,7 +165,7 @@ psql -U your_user -d portal_code_db -f database/schema.sql
 
 ---
 
-## 9. Future Enhancements
+## 8. Future Enhancements
 
 * Offline support (Progressive Web App)
 * Multilingual support (Khmer / English)
@@ -185,7 +175,7 @@ psql -U your_user -d portal_code_db -f database/schema.sql
 
 ---
 
-## 10. Use Cases
+## 9. Use Cases
 
 * Individuals filling official forms
 * Logistics and delivery services
@@ -194,7 +184,7 @@ psql -U your_user -d portal_code_db -f database/schema.sql
 
 ---
 
-## 11. Contribution
+## 10. Contribution
 
 Contributions are welcome. Please follow standard development practices:
 
@@ -204,13 +194,13 @@ Contributions are welcome. Please follow standard development practices:
 
 ---
 
-## 12. License
+## 11. License
 
 This project is intended for educational and practical use. Licensing terms can be defined based on deployment and distribution requirements.
 
 ---
 
-## 13. Conclusion
+## 12. Conclusion
 
 LEAKKOD is designed as a foundational utility rather than a simple web application. By focusing on accuracy, performance, and usability, the system aims to streamline access to essential location data across Cambodia.
 
