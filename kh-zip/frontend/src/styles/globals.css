@@ -1,0 +1,123 @@
+/* ════════════════════════════════════════════════════════════
+   Khmer Postal Code — Global Styles
+   Dark Cambodian aesthetic: deep navy + gold + Khmer typography
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Tokens ── */
+:root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --surface2: #1a1a24;
+    --surface3: #22222e;
+    --border: rgba(255, 255, 255, 0.06);
+    --border-md: rgba(255, 255, 255, 0.10);
+
+    --gold: #c9a84c;
+    --gold-light: #e8c96a;
+    --gold-dim: rgba(201, 168, 76, 0.12);
+    --gold-glow: rgba(201, 168, 76, 0.25);
+
+    --teal: #2dd4bf;
+    --teal-dim: rgba(45, 212, 191, 0.12);
+    --red: #d94f3d;
+    --red-dim: rgba(217, 79, 61, 0.12);
+
+    --text: #f0ede8;
+    --text-dim: rgba(240, 237, 232, 0.50);
+    --text-muted: rgba(240, 237, 232, 0.28);
+
+    --radius: 12px;
+    --radius-sm: 8px;
+
+    --font-khmer: 'Hanuman', 'Moul', serif;
+    --font-display: 'Syne', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-display);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Noise texture overlay ── */
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.35;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-md);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 168, 76, 0.3);
+}
+
+/* ── Leaflet dark-mode overrides ── */
+.leaflet-tile-pane {
+    filter: brightness(0.65) saturate(0.55);
+}
+
+.leaflet-popup-content-wrapper {
+    background: var(--surface2) !important;
+    border: 1px solid var(--border-md) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6) !important;
+    color: var(--text) !important;
+    font-family: var(--font-display) !important;
+}
+
+.leaflet-popup-tip {
+    background: var(--surface2) !important;
+}
+
+.leaflet-popup-close-button {
+    color: var(--text-dim) !important;
+    top: 8px !important;
+    right: 8px !important;
+}
+
+.leaflet-control-zoom a {
+    background: var(--surface2) !important;
+    color: var(--text-dim) !important;
+    border-color: var(--border-md) !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background: var(--surface3) !important;
+    color: var(--gold) !important;
+}
