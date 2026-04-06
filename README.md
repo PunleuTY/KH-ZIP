@@ -200,8 +200,10 @@ This project is intended for educational and practical use. Licensing terms can 
 
 ---
 
-## 12. Conclusion
+## 12. Conclusion & Appendix
 
 LEAKKOD is designed as a foundational utility rather than a simple web application. By focusing on accuracy, performance, and usability, the system aims to streamline access to essential location data across Cambodia.
 
 The long-term vision is to evolve this platform into a reliable infrastructure component that can support broader digital services and integrations.
+
+![LEAKKOD Web Interface](LEAKKOD-web.png)
